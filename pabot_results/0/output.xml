@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20250407 23:00:57.612" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Login" source="C:\Users\David\PycharmProjects\Testing_E-rechnung\TestCases\login.robot">
+<test id="s1-s1-t1" name="LoginTest" line="13">
+<kw name="Open My Browser" library="LoginKeywords">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20250407 23:01:00.559" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
+<msg timestamp="20250407 23:01:01.649" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20250407 23:01:01.649" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20250407 23:01:00.558" endtime="20250407 23:01:01.733"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20250407 23:01:01.734" endtime="20250407 23:01:01.734"/>
+</kw>
+<status status="FAIL" starttime="20250407 23:01:00.557" endtime="20250407 23:01:01.734"/>
+</kw>
+<kw name="Enter Username" library="LoginKeywords">
+<arg>${username}</arg>
+<status status="NOT RUN" starttime="20250407 23:01:01.734" endtime="20250407 23:01:01.734"/>
+</kw>
+<kw name="Enter Password" library="LoginKeywords">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20250407 23:01:01.735" endtime="20250407 23:01:01.735"/>
+</kw>
+<kw name="Click SignIn" library="LoginKeywords">
+<status status="NOT RUN" starttime="20250407 23:01:01.735" endtime="20250407 23:01:01.735"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20250407 23:01:01.735" endtime="20250407 23:01:01.735"/>
+</kw>
+<kw name="Verify Successfull login" library="LoginKeywords">
+<status status="NOT RUN" starttime="20250407 23:01:01.735" endtime="20250407 23:01:01.736"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20250407 23:01:01.736" endtime="20250407 23:01:01.736"/>
+</kw>
+<kw name="close my browsers" library="LoginKeywords">
+<status status="NOT RUN" starttime="20250407 23:01:01.736" endtime="20250407 23:01:01.737"/>
+</kw>
+<status status="FAIL" starttime="20250407 23:01:00.556" endtime="20250407 23:01:01.737">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<status status="FAIL" starttime="20250407 23:00:57.676" endtime="20250407 23:01:01.739"/>
+</suite>
+<status status="FAIL" starttime="20250407 23:00:57.623" endtime="20250407 23:01:01.741"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Login">Suites.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
